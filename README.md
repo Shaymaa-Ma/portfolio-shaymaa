@@ -55,7 +55,7 @@ Portfolio/
 ├── script.js
 │
 ├── images/
-│   ├── profile2.png
+│   ├── profile.png
 │   ├── ai-career-coach.png
 │   ├── liwan-cover.svg
 │   ├── innerglow-cover.svg
