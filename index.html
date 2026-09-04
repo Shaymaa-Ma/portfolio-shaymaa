@@ -1,460 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shaymaa Mashaal — Full-Stack Web Developer</title>
-<meta name="description" content="Shaymaa Mashaal is a Full-Stack Web Developer and Computer Science student based in Lebanon, building AI-powered platforms, digital menu systems, and modern web applications.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaymaa Mashaal — Full-Stack Web Developer</title>
+  <meta name="description"
+    content="Shaymaa Mashaal is a Full-Stack Web Developer and Computer Science student based in Lebanon, building AI-powered platforms, digital menu systems, and modern web applications.">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- PRELOADER -->
-<div id="preloader" aria-hidden="true">
-  <svg class="pre-mark" viewBox="0 0 120 120" width="72" height="72">
-    <circle cx="60" cy="60" r="46" fill="none" stroke="var(--accent-gold)" stroke-width="1" opacity="0.35"/>
-    <text x="60" y="78" text-anchor="middle" class="pre-letter">S</text>
-  </svg>
-</div>
+  <!-- PRELOADER -->
+  <div id="preloader" aria-hidden="true">
+    <svg class="pre-mark" viewBox="0 0 120 120" width="72" height="72">
+      <circle cx="60" cy="60" r="46" fill="none" stroke="var(--accent-gold)" stroke-width="1" opacity="0.35" />
+      <text x="60" y="78" text-anchor="middle" class="pre-letter">S</text>
+    </svg>
+  </div>
 
-<a class="skip-link" href="#home">Skip to content</a>
+  <a class="skip-link" href="#home">Skip to content</a>
 
-<!-- NAV -->
-<header id="site-header">
-  <nav class="navbar" aria-label="Primary">
-    <a href="#home" class="logo" aria-label="Shaymaa Mashaal, home">
-      <span class="logo-mark">S</span><span class="logo-text">haymaa<span class="logo-dot">.</span></span>
-    </a>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
-      <li><a href="#about" class="nav-link" data-nav>About</a></li>
-      <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
-      <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
-      <li><a href="#journey" class="nav-link" data-nav>Journey</a></li>
-      <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
-    </ul>
-
-    <div class="nav-actions">
-      <a href="assets/Shaymaa Mashaal-Resume.pdf" target="_blank" class="btn btn-ghost btn-small">
-        <i class="fa-solid fa-arrow-down-long"></i> Resume
+  <!-- NAV -->
+  <header id="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="logo" aria-label="Shaymaa Mashaal, home">
+        <span class="logo-mark">S</span><span class="logo-text">haymaa<span class="logo-dot">.</span></span>
       </a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-</header>
 
-<main>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+        <li><a href="#journey" class="nav-link" data-nav>Journey</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-lattice" aria-hidden="true"></div>
-
-    <div class="hero-inner container">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span>Available for freelance work &amp; in-office roles</p>
-
-        <h1 class="hero-title">
-          <span class="hero-title-line">Shaymaa</span>
-          <span class="hero-title-line hero-title-accent">Mashaal</span>
-        </h1>
-
-        <p class="hero-role">Full&#8209;Stack Web Developer</p>
-
-        <p class="hero-desc">
-          I design and build interactive web applications end to end — clean architecture on the
-          back end, considered interfaces on the front end. Currently completing a Computer Science
-          degree in Lebanon while shipping full‑stack products from idea to deployment.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">
-            <span>View Projects</span><i class="fa-solid fa-arrow-right"></i>
-          </a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
-          <a href="assets/Shaymaa Mashaal-Resume.pdf" target="_blank" class="btn btn-text">
-            <i class="fa-solid fa-download"></i> Download CV
-          </a>
-        </div>
-
-        <div class="hero-meta">
-          <span><i class="fa-solid fa-location-dot"></i> Tyre, Lebanon</span>
-          <span class="meta-divider">/</span>
-          <span><i class="fa-solid fa-graduation-cap"></i> CS</span>
-        </div>
-
-        <ul class="social-row" aria-label="Social links">
-          <li><a href="https://github.com/Shaymaa-Ma" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/shaymaa-mashaal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
-         <!-- <li><a href="https://www.instagram.com/sh.__.ma" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>-->
-        </ul>
+      <div class="nav-actions">
+        <a href="assets/Shaymaa Mashaal-Resume.pdf" target="_blank" class="btn btn-ghost btn-small">
+          <i class="fa-solid fa-arrow-down-long"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+    </nav>
+  </header>
 
-      <div class="hero-visual" aria-hidden="true">
-        <svg class="monogram" viewBox="0 0 420 420" fill="none">
-          <circle cx="210" cy="210" r="170" class="mono-ring mono-ring-1"/>
-          <circle cx="210" cy="210" r="140" class="mono-ring mono-ring-2"/>
-          <g class="lattice-cluster">
-            <polygon class="lattice-shape" points="210,60 245,80 245,120 210,140 175,120 175,80"/>
-            <polygon class="lattice-shape lattice-shape-2" points="330,150 355,165 355,195 330,210 305,195 305,165"/>
-            <polygon class="lattice-shape lattice-shape-3" points="95,260 120,275 120,305 95,320 70,305 70,275"/>
-          </g>
-          <text x="210" y="255" text-anchor="middle" class="mono-letter">S</text>
-        </svg>
+  <main>
 
-        <span class="float-chip chip-1"><i class="fa-brands fa-react"></i> React</span>
-        <span class="float-chip chip-2"><i class="fa-brands fa-node-js"></i> Node.js</span>
-        <span class="float-chip chip-3"><i class="fa-solid fa-database"></i> MySQL</span>
-        <span class="float-chip chip-4"><i class="fa-brands fa-php"></i> PHP</span>
-      </div>
-    </div>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-lattice" aria-hidden="true"></div>
 
-    <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
-      <span></span>
-    </a>
-  </section>
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span>Available for freelance work &amp; in-office roles</p>
 
-  <!-- ABOUT -->
-  <section class="about section" id="about">
-    <div class="container">
-      <p class="eyebrow eyebrow-center"><span class="lattice-dash" aria-hidden="true"></span>About</p>
-      <h2 class="section-title center">Where logic meets craft</h2>
+          <h1 class="hero-title">
+            <span class="hero-title-line">Shaymaa</span>
+            <span class="hero-title-line hero-title-accent">Mashaal</span>
+          </h1>
 
-      <div class="about-grid">
-        <div class="about-image" data-aos="fade-right">
-          <div class="frame-corner corner-tl" aria-hidden="true"></div>
-          <div class="frame-corner corner-br" aria-hidden="true"></div>
-          <img src="images/profile.png" alt="Portrait of Shaymaa Mashaal">
-        </div>
+          <p class="hero-role">Full&#8209;Stack Web Developer</p>
 
-        <div class="about-copy" data-aos="fade-left">
-          <p>
-            I'm <strong>Shaymaa Mashaal</strong>, a Full‑Stack Web
-            Developer based in Lebanon. I enjoy turning ideas into functional, well‑built web
-            products — combining development, problem‑solving, and thoughtful design in equal
-            measure.
-          </p>
-          <p>
-            My focus is on applications that are simple, efficient, and genuinely pleasant to use,
-            whether that's an AI‑powered coaching platform, a restaurant's digital menu, or a
-            small e‑commerce interface. I care as much about how the code is structured as how the
-            final product feels.
+          <p class="hero-desc">
+            I design and build interactive web applications end to end — clean architecture on the
+            back end, considered interfaces on the front end. Currently completing a Computer Science
+            degree in Lebanon while shipping full‑stack products from idea to deployment.
           </p>
 
-          <div class="stats-row">
-            <div class="stat">
-              <span class="stat-num">6+</span>
-              <span class="stat-label">Projects Shipped</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">Full‑Stack</span>
-              <span class="stat-label">Frontend &amp; Backend</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">Lebanon</span>
-              <span class="stat-label">Based &amp; Remote‑Ready</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="skills section" id="skills">
-    <div class="container">
-      <p class="eyebrow eyebrow-center"><span class="lattice-dash" aria-hidden="true"></span>Skills</p>
-      <h2 class="section-title center">Tools of the trade</h2>
-      <p class="section-sub center">The stack I reach for most, organized by where it sits in a product.</p>
-
-      <div class="skills-grid">
-
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="skill-icon"><i class="fa-solid fa-display"></i></div>
-          <h3>Frontend</h3>
-          <p class="skill-desc">Interfaces that feel responsive and considered, across every screen size.</p>
-          <div class="skill-pills">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span>
-            <span>React</span><span>Bootstrap</span><span>Tailwind CSS</span><span>Vite</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
-          <h3>Backend</h3>
-          <p class="skill-desc">APIs and server logic built to be reliable, readable, and easy to extend.</p>
-          <div class="skill-pills">
-            <span>Node.js</span><span>Express.js</span><span>PHP</span><span>REST APIs</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
-          <h3>Databases</h3>
-          <p class="skill-desc">Structured, well‑indexed data models behind every application.</p>
-          <div class="skill-pills">
-            <span>MySQL</span><span>SQL</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="skill-icon"><i class="fa-solid fa-toolbox"></i></div>
-          <h3>Tools &amp; Deployment</h3>
-          <p class="skill-desc">The workflow and platforms that take a project from local to live.</p>
-          <div class="skill-pills">
-            <span>Git</span><span>GitHub</span><span>VS Code</span><span>Figma</span>
-            <span>Render</span><span>Netlify</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="projects section" id="projects">
-    <div class="container">
-      <p class="eyebrow eyebrow-center"><span class="lattice-dash" aria-hidden="true"></span>Projects</p>
-      <h2 class="section-title center">Featured work</h2>
-      <p class="section-sub center">A selection of full‑stack builds, from an AI coaching platform to a restaurant's digital menu.</p>
-
-      <div class="projects-grid">
-
-        <!-- Featured: AI Career Coach -->
-        <article class="project-card featured" data-aos="fade-up">
-          <div class="project-media">
-            <img src="images/ai-career-coach.png" alt="AI Career Coach and Job Preparation Platform interface">
-            <span class="project-badge">Senior Project</span>
-          </div>
-          <div class="project-body">
-            <h3>AI Career Coach &amp; Job Preparation Platform</h3>
-            <p>
-              An AI‑powered career development platform helping students, graduates, and job
-              seekers improve career readiness through resume analysis, skill‑gap detection,
-              personalized learning roadmaps, interview simulation, and AI career coaching.
-            </p>
-            <div class="tech-pills">
-              <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>Groq API</span><span>LLaMA 3.3 70B</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Shaymaa-Ma/ai-career-coach-platform.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Featured: LIWAN -->
-        <article class="project-card featured" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-media">
-            <img src="images/liwan.png" alt="LIWAN QR Digital Menu System interface" onerror="this.closest('.project-media').classList.add('no-image')">
-            <span class="project-badge project-badge-alt">Live Product</span>
-          </div>
-          <div class="project-body">
-            <h3>LIWAN — QR Digital Menu System</h3>
-            <p>
-              A responsive QR digital menu system for restaurants, inspired by Lebanese
-              fine‑dining. Customers browse the menu by scanning a QR code, while admins manage
-              categories, items, images, prices, and availability through a secure dashboard —
-              plus on‑demand QR code generation.
-            </p>
-            <div class="tech-pills">
-              <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Shaymaa-Ma/liwan-qr-digital-menu.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-              <a href="https://liwanmenu.site.je" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Mood Tracker -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="project-media">
-            <img src="images/mood_journal-UI.png" alt="InnerGlow mood tracker interface">
-          </div>
-          <div class="project-body">
-            <h3>InnerGlow — Full‑Stack Mood Tracker</h3>
-            <p>A web app to log moods daily, visualize trends over time, and manage entries through a modern, responsive interface.</p>
-            <div class="tech-pills">
-              <span>React.js</span><span>Bootstrap</span><span>Node.js</span><span>Express.js</span><span>MySQL</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Shaymaa-Ma/InnerGlow.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Alibaba Clone -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-media">
-            <img src="images/alibaba.png" alt="Alibaba-inspired e-commerce frontend clone">
-          </div>
-          <div class="project-body">
-            <h3>Alibaba Clone (Frontend)</h3>
-            <p>A simple e‑commerce frontend inspired by Alibaba, focused on component structure, routing, and Tailwind styling at scale.</p>
-            <div class="tech-pills">
-              <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind CSS</span><span>Redux</span><span>Context API</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Shaymaa-Ma/alibaba-clone.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Flower Shop -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="250">
-          <div class="project-media">
-            <img src="images/flower.jpeg" alt="BloomsHug flower shop website">
-          </div>
-          <div class="project-body">
-            <h3>BloomsHug — Flower Shop Website</h3>
-            <p>My first full website project, built to master responsive layout, UI, and user experience fundamentals with basic PHP backend integration.</p>
-            <div class="tech-pills">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Shaymaa-Ma/BloomsHugWebsite.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Planora -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="project-media">
-            <img src="images/planora-figma.png" alt="Planora event management UI design in Figma">
-          </div>
-          <div class="project-body">
-            <h3>Planora — Event Management (UI/UX)</h3>
-            <p>A full UI/UX design for an event management platform covering event creation, attendee management, ticketing, and vendor features.</p>
-            <div class="tech-pills">
-              <span>Figma</span><span>UI/UX Design</span><span>Prototyping</span>
-            </div>
-            <div class="project-links">
-              <a href="https://www.figma.com/design/xBtafnFyjP0k4Fxn3e7ein/Planora-Website?node-id=0-1&t=7YxdRakrVXuty1YB-1" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Design</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- JOURNEY -->
-  <section class="journey section" id="journey">
-    <div class="container">
-      <p class="eyebrow eyebrow-center"><span class="lattice-dash" aria-hidden="true"></span>Journey</p>
-      <h2 class="section-title center">How I got here</h2>
-
-      <ol class="timeline">
-        <li class="timeline-item" data-aos="fade-up">
-          <span class="timeline-marker" aria-hidden="true"></span>
-          <div class="timeline-content">
-            <h3>First website, first lessons</h3>
-            <p>Built BloomsHug, a flower shop website, to master HTML, CSS, JavaScript, and basic PHP — the project that turned curiosity into a craft.</p>
-          </div>
-        </li>
-        <li class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-          <span class="timeline-marker" aria-hidden="true"></span>
-          <div class="timeline-content">
-            <h3>Going full‑stack</h3>
-            <p>Expanded into React, Node.js, Express, and MySQL — shipping complete products like InnerGlow and the LIWAN digital menu system, backend included.</p>
-          </div>
-        </li>
-        <li class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-          <span class="timeline-marker" aria-hidden="true"></span>
-          <div class="timeline-content">
-            <h3>Senior project: AI Career Coach</h3>
-            <p>Combined full‑stack engineering with AI integration — building a career‑readiness platform powered by Groq API and LLaMA 3.3 70B.</p>
-          </div>
-        </li>
-        <li class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-          <span class="timeline-marker" aria-hidden="true"></span>
-          <div class="timeline-content">
-            <h3>Today</h3>
-            <p>Completing my final semester in Computer Science while building production-ready web applications and preparing for the next step in my software engineering career.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact section" id="contact">
-    <div class="container">
-      <p class="eyebrow eyebrow-center"><span class="lattice-dash" aria-hidden="true"></span>Contact</p>
-      <h2 class="section-title center">Let's build something</h2>
-      <p class="section-sub center">Open to freelance projects and in‑office opportunities — reach out and let's talk.</p>
-
-      <div class="contact-grid">
-        <div class="contact-info" data-aos="fade-right">
-          <a class="contact-item" href="mailto:shaimaamashaal73@gmail.com">
-            <i class="fa-solid fa-envelope"></i>
-            <span>shaimaamashaal73@gmail.com</span>
-          </a>
-          <a class="contact-item" href="tel:+96171633784">
-            <i class="fa-solid fa-phone"></i>
-            <span>+961 71 633 784</span>
-          </a>
-          <div class="contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Tyre, Lebanon</span>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span><i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="assets/Shaymaa Mashaal-Resume.pdf" target="_blank" class="btn btn-text">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
           </div>
 
-          <ul class="social-row social-row-contact" aria-label="Social links">
-            <li><a href="https://github.com/Shaymaa-Ma" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/shaymaa-mashaal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
-           <!-- <li><a href="https://www.instagram.com/sh.__.ma" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>-->
+          <div class="hero-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Tyre, Lebanon</span>
+            <span class="meta-divider">/</span>
+            <span><i class="fa-solid fa-graduation-cap"></i> CS</span>
+          </div>
+
+          <ul class="social-row" aria-label="Social links">
+            <li><a href="https://github.com/Shaymaa-Ma" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                  class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/shaymaa-mashaal/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <!-- <li><a href="https://www.instagram.com/sh.__.ma" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>-->
           </ul>
         </div>
 
-        <form class="contact-form" data-aos="fade-left" action="https://formspree.io/f/xzdazozo" method="POST">
-          <input type="hidden" name="_subject" value="New message from your portfolio!">
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="monogram" viewBox="0 0 420 420" fill="none">
+            <circle cx="210" cy="210" r="170" class="mono-ring mono-ring-1" />
+            <circle cx="210" cy="210" r="140" class="mono-ring mono-ring-2" />
+            <g class="lattice-cluster">
+              <polygon class="lattice-shape" points="210,60 245,80 245,120 210,140 175,120 175,80" />
+              <polygon class="lattice-shape lattice-shape-2" points="330,150 355,165 355,195 330,210 305,195 305,165" />
+              <polygon class="lattice-shape lattice-shape-3" points="95,260 120,275 120,305 95,320 70,305 70,275" />
+            </g>
+            <text x="210" y="255" text-anchor="middle" class="mono-letter">S</text>
+          </svg>
 
-          <div class="form-group">
-            <label for="user_name">Name</label>
-            <input type="text" id="user_name" name="user_name" placeholder="Your name" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-full">
-            <span>Send Message</span><i class="fa-solid fa-paper-plane"></i>
-          </button>
-          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
-        </form>
+          <span class="float-chip chip-1"><i class="fa-brands fa-react"></i> React</span>
+          <span class="float-chip chip-2"><i class="fa-brands fa-node-js"></i> Node.js</span>
+          <span class="float-chip chip-3"><i class="fa-solid fa-database"></i> MySQL</span>
+          <span class="float-chip chip-4"><i class="fa-brands fa-php"></i> PHP</span>
+        </div>
       </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container">
+        <p class="eyebrow eyebrow-center"><span class="lattice-dash" aria-hidden="true"></span>About</p>
+        <h2 class="section-title center">Where logic meets craft</h2>
+
+        <div class="about-grid">
+          <div class="about-image" data-aos="fade-right">
+            <div class="frame-corner corner-tl" aria-hidden="true"></div>
+            <div class="frame-corner corner-br" aria-hidden="true"></div>
+            <img src="images/profile.png" alt="Portrait of Shaymaa Mashaal">
+          </div>
+
+          <div class="about-copy" data-aos="fade-left">
+            <p>
+              I'm <strong>Shaymaa Mashaal</strong>, a Full‑Stack Web
+              Developer based in Lebanon. I enjoy turning ideas into functional, well‑built web
+              products — combining development, problem‑solving, and thoughtful design in equal
+              measure.
+            </p>
+            <p>
+              My focus is on applications that are simple, efficient, and genuinely pleasant to use,
+              whether that's an AI‑powered coaching platform, a restaurant's digital menu, or a
+              small e‑commerce interface. I care as much about how the code is structured as how the
+              final product feels.
+            </p>
+
+            <div class="stats-row">
+              <div class="stat">
+                <span class="stat-num">6+</span>
+                <span class="stat-label">Projects Shipped</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">Full‑Stack</span>
+                <span class="stat-label">Frontend &amp; Backend</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">Lebanon</span>
+                <span class="stat-label">Based &amp; Remote‑Ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <p class="eyebrow eyebrow-center"><span class="lattice-dash" aria-hidden="true"></span>Skills</p>
+        <h2 class="section-title center">Tools of the trade</h2>
+        <p class="section-sub center">The stack I reach for most, organized by where it sits in a product.</p>
+
+        <div class="skills-grid">
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="skill-icon"><i class="fa-solid fa-display"></i></div>
+            <h3>Frontend</h3>
+            <p class="skill-desc">Interfaces that feel responsive and considered, across every screen size.</p>
+            <div class="skill-pills">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span>
+              <span>React</span><span>Bootstrap</span><span>Tailwind CSS</span><span>Vite</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>Backend</h3>
+            <p class="skill-desc">APIs and server logic built to be reliable, readable, and easy to extend.</p>
+            <div class="skill-pills">
+              <span>Node.js</span><span>Express.js</span><span>PHP</span><span>REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Databases</h3>
+            <p class="skill-desc">Structured, well‑indexed data models behind every application.</p>
+            <div class="skill-pills">
+              <span>MySQL</span><span>SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-icon"><i class="fa-solid fa-toolbox"></i></div>
+            <h3>Tools &amp; Deployment</h3>
+            <p class="skill-desc">The workflow and platforms that take a project from local to live.</p>
+            <div class="skill-pills">
+              <span>Git</span><span>GitHub</span><span>VS Code</span><span>Figma</span>
+              <span>Render</span><span>Netlify</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <p class="eyebrow eyebrow-center"><span class="lattice-dash" aria-hidden="true"></span>Projects</p>
+        <h2 class="section-title center">Featured work</h2>
+        <p class="section-sub center">A selection of full‑stack builds, from an AI coaching platform to a restaurant's
+          digital menu.</p>
+
+        <div class="projects-grid">
+
+          <!-- Featured: AI Career Coach -->
+          <article class="project-card featured" data-aos="fade-up">
+            <div class="project-media">
+              <img src="images/ai-career-coach.png" alt="AI Career Coach and Job Preparation Platform interface">
+              <span class="project-badge">Senior Project</span>
+            </div>
+            <div class="project-body">
+              <h3>AI Career Coach &amp; Job Preparation Platform</h3>
+              <p>
+                An AI‑powered career development platform helping students, graduates, and job
+                seekers improve career readiness through resume analysis, skill‑gap detection,
+                personalized learning roadmaps, interview simulation, and AI career coaching.
+              </p>
+              <div class="tech-pills">
+                <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>Groq
+                  API</span><span>LLaMA 3.3 70B</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Shaymaa-Ma/ai-career-coach-platform.git" target="_blank"
+                  rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured: LIWAN -->
+          <article class="project-card featured" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-media">
+              <img src="images/liwan.png" alt="LIWAN QR Digital Menu System interface"
+                onerror="this.closest('.project-media').classList.add('no-image')">
+              <span class="project-badge project-badge-alt">Live Product</span>
+            </div>
+            <div class="project-body">
+              <h3>LIWAN — QR Digital Menu System</h3>
+              <p>
+                A responsive QR digital menu system for restaurants, inspired by Lebanese
+                fine‑dining. Customers browse the menu by scanning a QR code, while admins manage
+                categories, items, images, prices, and availability through a secure dashboard —
+                plus on‑demand QR code generation.
+              </p>
+              <div class="tech-pills">
+                <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Shaymaa-Ma/liwan-qr-digital-menu.git" target="_blank"
+                  rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://liwanmenu.site.je" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Constructify Construction Portfolio -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="project-media">
+              <img src="images/construction-portfolio.png" alt="Constructify construction portfolio website">
+            </div>
+
+            <div class="project-body">
+              <h3>Constructify — Construction Portfolio</h3>
+
+              <p>
+                A modern full-stack construction portfolio website with a dynamic admin
+                panel for managing projects, categories, services, site settings, and
+                content. Administrators can update content, manage images, and control
+                project and category availability through the dashboard.
+              </p>
+
+              <div class="tech-pills">
+                <span>React.js</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+                <span>JavaScript</span>
+                <span>REST API</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Shaymaa-Ma/constructify-portfolio.git" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Alibaba Clone -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-media">
+              <img src="images/alibaba.png" alt="Alibaba-inspired e-commerce frontend clone">
+            </div>
+            <div class="project-body">
+              <h3>Alibaba Clone (Frontend)</h3>
+              <p>A simple e‑commerce frontend inspired by Alibaba, focused on component structure, routing, and Tailwind
+                styling at scale.</p>
+              <div class="tech-pills">
+                <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind
+                  CSS</span><span>Redux</span><span>Context API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Shaymaa-Ma/alibaba-clone.git" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mood Tracker -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-media">
+              <img src="images/mood_journal-UI.png" alt="InnerGlow mood tracker interface">
+            </div>
+            <div class="project-body">
+              <h3>InnerGlow — Full‑Stack Mood Tracker</h3>
+              <p>A web app to log moods daily, visualize trends over time, and manage entries through a modern,
+                responsive interface.</p>
+              <div class="tech-pills">
+                <span>React.js</span><span>Bootstrap</span><span>Node.js</span><span>Express.js</span><span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Shaymaa-Ma/InnerGlow.git" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Flower Shop -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="project-media">
+              <img src="images/flower.jpeg" alt="BloomsHug flower shop website">
+            </div>
+            <div class="project-body">
+              <h3>BloomsHug — Flower Shop Website</h3>
+              <p>My first full website project, built to master responsive layout, UI, and user experience fundamentals
+                with basic PHP backend integration.</p>
+              <div class="tech-pills">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Shaymaa-Ma/BloomsHugWebsite.git" target="_blank"
+                  rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Planora -->
+          <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-media">
+              <img src="images/planora-figma.png" alt="Planora event management UI design in Figma">
+            </div>
+            <div class="project-body">
+              <h3>Planora — Event Management (UI/UX)</h3>
+              <p>A full UI/UX design for an event management platform covering event creation, attendee management,
+                ticketing, and vendor features.</p>
+              <div class="tech-pills">
+                <span>Figma</span><span>UI/UX Design</span><span>Prototyping</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.figma.com/design/xBtafnFyjP0k4Fxn3e7ein/Planora-Website?node-id=0-1&t=7YxdRakrVXuty1YB-1"
+                  target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> View
+                  Design</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="journey section" id="journey">
+      <div class="container">
+        <p class="eyebrow eyebrow-center"><span class="lattice-dash" aria-hidden="true"></span>Journey</p>
+        <h2 class="section-title center">How I got here</h2>
+
+        <ol class="timeline">
+          <li class="timeline-item" data-aos="fade-up">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <h3>First website, first lessons</h3>
+              <p>Built BloomsHug, a flower shop website, to master HTML, CSS, JavaScript, and basic PHP — the project
+                that turned curiosity into a craft.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <h3>Going full‑stack</h3>
+              <p>Expanded into React, Node.js, Express, and MySQL — shipping complete products like InnerGlow and the
+                LIWAN digital menu system, backend included.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <h3>Senior project: AI Career Coach</h3>
+              <p>Combined full‑stack engineering with AI integration — building a career‑readiness platform powered by
+                Groq API and LLaMA 3.3 70B.</p>
+            </div>
+          </li>
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <h3>Today</h3>
+              <p>Completing my final semester in Computer Science while building production-ready web applications and
+                preparing for the next step in my software engineering career.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <p class="eyebrow eyebrow-center"><span class="lattice-dash" aria-hidden="true"></span>Contact</p>
+        <h2 class="section-title center">Let's build something</h2>
+        <p class="section-sub center">Open to freelance projects and in‑office opportunities — reach out and let's talk.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <a class="contact-item" href="mailto:shaimaamashaal73@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <span>shaimaamashaal73@gmail.com</span>
+            </a>
+            <a class="contact-item" href="tel:+96171633784">
+              <i class="fa-solid fa-phone"></i>
+              <span>+961 71 633 784</span>
+            </a>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Tyre, Lebanon</span>
+            </div>
+
+            <ul class="social-row social-row-contact" aria-label="Social links">
+              <li><a href="https://github.com/Shaymaa-Ma" target="_blank" rel="noopener noreferrer"
+                  aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/shaymaa-mashaal/" target="_blank" rel="noopener noreferrer"
+                  aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <!-- <li><a href="https://www.instagram.com/sh.__.ma" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>-->
+            </ul>
+          </div>
+
+          <form class="contact-form" data-aos="fade-left" action="https://formspree.io/f/xzdazozo" method="POST">
+            <input type="hidden" name="_subject" value="New message from your portfolio!">
+
+            <div class="form-group">
+              <label for="user_name">Name</label>
+              <input type="text" id="user_name" name="user_name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span><i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo logo-small"><span class="logo-mark">S</span><span class="logo-text">haymaa<span
+            class="logo-dot">.</span></span></a>
+      <p>&copy; <span id="year"></span> Shaymaa Mashaal. Built from scratch, line by line.</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
-  </section>
+  </footer>
 
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <a href="#home" class="logo logo-small"><span class="logo-mark">S</span><span class="logo-text">haymaa<span class="logo-dot">.</span></span></a>
-    <p>&copy; <span id="year"></span> Shaymaa Mashaal. Built from scratch, line by line.</p>
-    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
-  </div>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
