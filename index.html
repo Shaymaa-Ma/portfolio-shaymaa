@@ -143,7 +143,12 @@
           <div class="about-image" data-aos="fade-right">
             <div class="frame-corner corner-tl" aria-hidden="true"></div>
             <div class="frame-corner corner-br" aria-hidden="true"></div>
-            <img src="images/profile.png" alt="Portrait of Shaymaa Mashaal">
+
+            <img src="images/profile.webp" 
+            alt="Portrait of Shaymaa Mashaal" 
+            loading="lazy" 
+            decoding="async">
+
           </div>
 
           <div class="about-copy" data-aos="fade-left">
@@ -243,7 +248,10 @@
           <!-- Constructify Construction Portfolio — NEW PROJECT -->
           <article class="project-card featured" data-aos="fade-up">
             <div class="project-media">
-              <img src="images/construction-portfolio.png" alt="Constructify construction portfolio website">
+              <img src="images/construction-portfolio.webp" 
+              alt="Constructify construction portfolio website" 
+              loading="lazy" 
+              decoding="async">
 
               <span class="project-badge project-badge-new" id="constructify-new-badge">
                 ✦ New Project
@@ -279,12 +287,17 @@
             </div>
           </article>
 
-          
+
 
           <!-- Featured: AI Career Coach -->
           <article class="project-card featured" data-aos="fade-up">
             <div class="project-media">
-              <img src="images/ai-career-coach.png" alt="AI Career Coach and Job Preparation Platform interface">
+
+              <img src="images/ai-career-coach.webp" 
+              alt="AI Career Coach and Job Preparation Platform interface"
+              loading="lazy" 
+              decoding="async">
+
               <span class="project-badge">Senior Project</span>
             </div>
             <div class="project-body">
@@ -304,12 +317,17 @@
               </div>
             </div>
           </article>
+          
 
           <!-- Featured: LIWAN -->
           <article class="project-card featured" data-aos="fade-up" data-aos-delay="100">
             <div class="project-media">
-              <img src="images/liwan.png" alt="LIWAN QR Digital Menu System interface"
-                onerror="this.closest('.project-media').classList.add('no-image')">
+
+              <img src="images/liwan.webp" alt="LIWAN QR Digital Menu System interface"
+                onerror="this.closest('.project-media').classList.add('no-image')"
+                loading="lazy" 
+              decoding="async">
+
               <span class="project-badge project-badge-alt">Live Product</span>
             </div>
             <div class="project-body">
@@ -338,7 +356,12 @@
           <!-- Alibaba Clone -->
           <article class="project-card" data-aos="fade-up" data-aos-delay="200">
             <div class="project-media">
-              <img src="images/alibaba.png" alt="Alibaba-inspired e-commerce frontend clone">
+
+              <img src="images/alibaba.webp" 
+              alt="Alibaba-inspired e-commerce frontend clone"
+              loading="lazy" 
+              decoding="async">
+
             </div>
             <div class="project-body">
               <h3>Alibaba Clone (Frontend)</h3>
@@ -358,7 +381,12 @@
           <!-- Mood Tracker -->
           <article class="project-card" data-aos="fade-up" data-aos-delay="150">
             <div class="project-media">
-              <img src="images/mood_journal-UI.png" alt="InnerGlow mood tracker interface">
+
+              <img src="images/mood_journal-UI.webp" 
+              alt="InnerGlow mood tracker interface"
+              loading="lazy" 
+              decoding="async">
+
             </div>
             <div class="project-body">
               <h3>InnerGlow — Full‑Stack Mood Tracker</h3>
@@ -377,7 +405,12 @@
           <!-- Flower Shop -->
           <article class="project-card" data-aos="fade-up" data-aos-delay="250">
             <div class="project-media">
-              <img src="images/flower.jpeg" alt="BloomsHug flower shop website">
+
+              <img src="images/flower.webp" 
+              alt="BloomsHug flower shop website"
+              loading="lazy" 
+              decoding="async"
+              >
             </div>
             <div class="project-body">
               <h3>BloomsHug — Flower Shop Website</h3>
@@ -396,7 +429,12 @@
           <!-- Planora -->
           <article class="project-card" data-aos="fade-up" data-aos-delay="300">
             <div class="project-media">
-              <img src="images/planora-figma.png" alt="Planora event management UI design in Figma">
+              <img src="images/planora-figma.webp" 
+              alt="Planora event management UI design in Figma"
+              loading="lazy" 
+              decoding="async">
+
+
             </div>
             <div class="project-body">
               <h3>Planora — Event Management (UI/UX)</h3>
@@ -535,19 +573,19 @@
 
 
   <script>
-  const projectDate = new Date("2026-09-04");
-  const today = new Date();
+    const projectDate = new Date("2026-09-04");
+    const today = new Date();
 
-  const daysToShow = 14;
-  const differenceInDays =
-    (today - projectDate) / (1000 * 60 * 60 * 24);
+    const daysToShow = 14;
+    const differenceInDays =
+      (today - projectDate) / (1000 * 60 * 60 * 24);
 
-  const badge = document.getElementById("constructify-new-badge");
+    const badge = document.getElementById("constructify-new-badge");
 
-  if (differenceInDays < 0 || differenceInDays >= daysToShow) {
-    badge.style.display = "none";
-  }
-</script>
+    if (differenceInDays < 0 || differenceInDays >= daysToShow) {
+      badge.style.display = "none";
+    }
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
