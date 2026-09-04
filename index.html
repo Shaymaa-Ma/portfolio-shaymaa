@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+
+
 <body>
 
   <!-- PRELOADER -->
@@ -238,6 +240,47 @@
 
         <div class="projects-grid">
 
+          <!-- Constructify Construction Portfolio — NEW PROJECT -->
+          <article class="project-card featured" data-aos="fade-up">
+            <div class="project-media">
+              <img src="images/construction-portfolio.png" alt="Constructify construction portfolio website">
+
+              <span class="project-badge project-badge-new" id="constructify-new-badge">
+                ✦ New Project
+              </span>
+
+            </div>
+
+            <div class="project-body">
+              <h3>Constructify — Construction Portfolio</h3>
+
+              <p>
+                A modern full-stack construction portfolio website with a dynamic admin
+                panel for managing projects, categories, services, site settings, and
+                content. Administrators can update content, manage images, and control
+                project and category availability through the dashboard.
+              </p>
+
+              <div class="tech-pills">
+                <span>React.js</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+                <span>JavaScript</span>
+                <span>REST API</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Shaymaa-Ma/constructify-portfolio.git" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          
+
           <!-- Featured: AI Career Coach -->
           <article class="project-card featured" data-aos="fade-up">
             <div class="project-media">
@@ -290,39 +333,7 @@
           </article>
 
 
-          <!-- Constructify Construction Portfolio -->
-          <article class="project-card" data-aos="fade-up" data-aos-delay="350">
-            <div class="project-media">
-              <img src="images/construction-portfolio.png" alt="Constructify construction portfolio website">
-            </div>
 
-            <div class="project-body">
-              <h3>Constructify — Construction Portfolio</h3>
-
-              <p>
-                A modern full-stack construction portfolio website with a dynamic admin
-                panel for managing projects, categories, services, site settings, and
-                content. Administrators can update content, manage images, and control
-                project and category availability through the dashboard.
-              </p>
-
-              <div class="tech-pills">
-                <span>React.js</span>
-                <span>PHP</span>
-                <span>MySQL</span>
-                <span>Bootstrap</span>
-                <span>JavaScript</span>
-                <span>REST API</span>
-              </div>
-
-              <div class="project-links">
-                <a href="https://github.com/Shaymaa-Ma/constructify-portfolio.git" target="_blank"
-                  rel="noopener noreferrer">
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-              </div>
-            </div>
-          </article>
 
           <!-- Alibaba Clone -->
           <article class="project-card" data-aos="fade-up" data-aos-delay="200">
@@ -401,6 +412,8 @@
               </div>
             </div>
           </article>
+
+
 
         </div>
       </div>
@@ -519,6 +532,22 @@
       <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
   </footer>
+
+
+  <script>
+  const projectDate = new Date("2026-09-04");
+  const today = new Date();
+
+  const daysToShow = 14;
+  const differenceInDays =
+    (today - projectDate) / (1000 * 60 * 60 * 24);
+
+  const badge = document.getElementById("constructify-new-badge");
+
+  if (differenceInDays < 0 || differenceInDays >= daysToShow) {
+    badge.style.display = "none";
+  }
+</script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
