@@ -27,6 +27,9 @@ A modern, dark-themed personal portfolio showcasing my work as a Full-Stack Web 
 
 ##  Featured Projects
 
+- **Constructify — Construction Portfolio**
+  Full-stack construction company portfolio site with a React client, React Admin Panel, native PHP API, and MySQL database. All content — Hero, About, Services, Projects, Site Settings — is database-driven, so admins can update the site without touching frontend code.
+
 - **AI Career Coach & Job Preparation Platform**
   AI-powered career guidance platform with resume analysis, interview preparation, learning roadmaps, and career coaching.
 
@@ -45,29 +48,6 @@ A modern, dark-themed personal portfolio showcasing my work as a Full-Stack Web 
 - **Planora**
   UI/UX design prototype created in Figma.
 
-##  Project Structure
-
-```text
-Portfolio/
-│
-├── index.html
-├── style.css
-├── script.js
-│
-├── images/
-│   ├── profile.png
-│   ├── ai-career-coach.png
-│   ├── liwan-cover.svg
-│   ├── innerglow-cover.svg
-│   ├── alibaba.png
-│   ├── flower.jpeg
-│   └── planora-cover.svg
-│
-├── assets/
-│   └── Shaymaa-Mashaal-Resume.pdf
-│
-└── README.md
-```
 
 ##  Getting Started
 
