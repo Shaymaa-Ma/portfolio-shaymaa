@@ -2,7 +2,7 @@
 
 A modern, dark-themed personal portfolio showcasing my work as a Full-Stack Web Developer. Built with HTML, CSS, and JavaScript, the portfolio highlights my projects, technical skills, education, and professional journey through an elegant and fully responsive design.
 
-**Live Demo:** (Add your portfolio URL here)
+**Live Demo:** ([Add your portfolio URL here](https://portfolio-shaymaa.netlify.app/))
 
 ##  Features
 
